@@ -1,32 +1,46 @@
-# Google App Script Starter
+# Google Apps Script Starter
 
 Starter kit to develop Google Apps Script projects.
 
-To login into your Google account:
+1. Download the starter
 
-To install dependencies:
+```
+git clone --depth=1 git@github.com:barretodavid/google-apps-script-starter.git your-project-name
+```
+
+2. Remove git history and create your own
+
+```
+cd your-project-name
+rm -rf .git
+git init
+```
+
+3. Install dependencies
 
 ```
 yarn install
 ```
 
+4. Login to your Google account
+
 ```
 yarn login
 ```
 
-To build the code:
+5. Build the code
 
 ```
 yarn build
 ```
 
-To push the code to Drive:
+6. Push the code to Drive
 
 ```
 yarn deploy
 ```
 
-For continous development use:
+For continuous development use:
 
 ```
 yarn dev
