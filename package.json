@@ -3,12 +3,13 @@
   "private": true,
   "scripts": {
     "build": "webpack --mode none",
-    "build:watch": "npm run build --watch",
-    "test": "jest",
-    "deploy": "clasp push",
-    "deploy:watch": "clasp push --watch",
-    "dev": "npm run build:watch & npm run deploy:watch",
-    "login": "clasp login"
+    "build:watch": "npm run build -- --watch",
+    "push": "clasp push --force",
+    "push:watch": "npm run push -- --watch",
+    "deploy": "npm run build && npm run push",
+    "dev": "concurrently \"npm run build:watch\" \"npm run push:watch\" --raw --kill-others",
+    "login": "clasp login",
+    "test": "jest"
   },
   "devDependencies": {
     "@google/clasp": "^2.3.0",
@@ -17,6 +18,8 @@
     "@types/node": "^14.0.13",
     "awesome-typescript-loader": "^5.2.1",
     "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.2.0",
+    "copy-webpack-plugin": "^6.0.2",
     "gas-webpack-plugin": "^1.0.2",
     "husky": ">=4",
     "jest": "^26.0.1",

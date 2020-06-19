@@ -3,6 +3,7 @@ const path = require('path');
 const GasPlugin = require('gas-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const config = {
   entry: './src/global.ts',
@@ -35,7 +36,13 @@ const config = {
       }),
     ],
   },
-  plugins: [new CleanWebpackPlugin(), new GasPlugin()],
+  plugins: [
+    new CleanWebpackPlugin(),
+    new GasPlugin(),
+    new CopyPlugin({
+      patterns: [{ from: './appsscript.json' }],
+    }),
+  ],
 };
 
 module.exports = config;
