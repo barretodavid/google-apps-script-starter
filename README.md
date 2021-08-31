@@ -56,3 +56,9 @@ For continuous development use:
 ```
 npm run dev
 ```
+
+To run tests
+
+```
+npm run test
+```
