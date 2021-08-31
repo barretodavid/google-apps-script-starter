@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 const GasPlugin = require('gas-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -15,7 +14,7 @@ const config = {
     rules: [
       {
         test: /\.ts$/,
-        use: ['awesome-typescript-loader'],
+        use: ['ts-loader'],
         exclude: /node_modules/,
       },
     ],

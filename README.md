@@ -19,29 +19,29 @@ git init
 3. Install dependencies
 
 ```
-yarn install
+npm install
 ```
 
 4. Login to your Google account
 
 ```
-yarn login
+npm run login
 ```
 
 5. Build the code
 
 ```
-yarn build
+npm run build
 ```
 
 6. Push the code to Drive
 
 ```
-yarn deploy
+npm run deploy
 ```
 
 For continuous development use:
 
 ```
-yarn dev
+npm run dev
 ```
