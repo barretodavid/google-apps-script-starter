@@ -34,7 +34,18 @@ npm run login
 npm run build
 ```
 
-6. Push the code to Drive
+6. Update `scriptId` with your own
+
+**.clasp.json**
+
+```js
+{
+  "scriptId": "put-your-script-id-here",
+  "rootDir": "dist/"
+}
+```
+
+7. Push the code to Drive
 
 ```
 npm run deploy
