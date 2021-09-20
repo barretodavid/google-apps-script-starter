@@ -7,4 +7,4 @@ import { uselessCalculation } from './index';
  *
  * @customFunction
  */
-(global as any).USELESS_CALCULATION = uselessCalculation;
+(global as any).USELESS_CALCULATION = (x: number) => uselessCalculation(x);
