@@ -1,6 +1,10 @@
 # Google Apps Script Starter
 
-Starter kit to develop Google Apps Script projects.
+Starter kit to develop bound scripts on Google Sheets using Google Apps Script with Typescript.
+
+The code on this project is explained in detail in the following [blog post](https://david-barreto.com/google-app-script-local-development-tutorial/).
+
+Instructions to use this starter kit for your own Google Spreadsheet:
 
 1. Download the starter
 
