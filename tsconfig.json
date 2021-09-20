@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "ESNEXT",
     "strict": true,
-    "types": ["node", "jest", "google-apps-script"],
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true
